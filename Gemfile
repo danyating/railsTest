@@ -7,6 +7,10 @@ gem 'rails', '4.2.0'
 group :development, :test do
   gem 'sqlite3'
 end
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
 
 #group :production do
 #  gem 'pg'
